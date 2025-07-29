@@ -17,5 +17,15 @@ The project explores:
 ---
 
 ## 🗂️ Folder Structure
+language_vlsi_project/
+├── speech_preprocessor/
+│ ├── audio_samples/ # Input audio files
+│ ├── results/ # MFCC outputs
+│ └── mfcc_extraction.py # Python script for MFCC
+├── indic_ocr/
+│ ├── images/ # Input image files
+│ ├── results/ # OCR output texts
+├── docs/ # Planning, notes, reports
+├── README.md # This file
 
 
