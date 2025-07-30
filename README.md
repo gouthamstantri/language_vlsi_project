@@ -28,4 +28,25 @@ language_vlsi_project/
 ├── docs/ # Planning, notes, reports
 ├── README.md # This file
 
+## ✅ Kannada OCR (Tesseract + Preprocessing)
 
+We added a module that extracts Kannada text from scanned images using:
+
+- 🧠 Tesseract OCR (`--lang kan`)
+- 🧼 Preprocessing via OpenCV:
+  - Grayscale
+  - Thresholding
+  - Median blur
+- 📝 Output saved to `indic_ocr/results/kannada_text.txt`
+
+### Run:
+```bash
+python ocr_kannada.py
+Sample image: indic_ocr/images/cleaned_kannada.png
+
+🔧 Setup Instructions
+bash
+Copy
+Edit
+pip install pytesseract pillow opencv-python
+Make sure tesseract.exe is installed and accessible.
